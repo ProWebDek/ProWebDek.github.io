@@ -13,7 +13,7 @@ import {
 /** @type {HTMLUListElement} */
 const lista = document.
   querySelector("#lista");
-const daoPasatiempo =
+const daoCliente =
   getFirestore().
     collection("Cliente");
 
@@ -32,7 +32,7 @@ async function protege(usuario) {
 }
 
 function consulta() {
-  daoPasatiempo.
+  daoCliente.
     orderBy("nombre")
     .onSnapshot(
       htmlLista, errConsulta);

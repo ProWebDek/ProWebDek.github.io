@@ -18,7 +18,7 @@ import {
 import {
   checksRoles,
   guardaUsuario,
-  selectPasatiempos
+  selectClientes
 } from "./usuarios.js";
 
 const params =
@@ -57,9 +57,9 @@ async function busca() {
       forma.cue.value = id || "";
       img.src =
         await urlStorage(id);
-      selectPasatiempos(
-        forma.pasatiempoId,
-        data.pasatiempoId)
+      selectClientes(
+        forma.clienteId,
+        data.clienteId)
       checksRoles(
         listaRoles, data.rolIds);
       forma.addEventListener(

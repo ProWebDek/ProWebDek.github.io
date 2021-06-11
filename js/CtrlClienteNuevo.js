@@ -7,13 +7,13 @@ import {
   muestraError
 } from "../lib/util.js";
 import {
-  muestraPasatiempos
+  muestraClientes
 } from "./navegacion.js";
 import {
   tieneRol
 } from "./seguridad.js";
 
-const daoPasatiempo =
+const daoCliente =
   getFirestore().
     collection("Cliente");
 /** @type {HTMLFormElement} */
@@ -47,9 +47,9 @@ async function guarda(evt) {
     const modelo = {
       nombre
     };
-    await daoPasatiempo.
+    await daoCliente.
       add(modelo);
-    muestraPasatiempos();
+    muestraClientes();
   } catch (e) {
     muestraError(e);
   }

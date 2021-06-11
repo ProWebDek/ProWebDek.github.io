@@ -95,7 +95,7 @@ async function elimina() {
   try {
     if (confirm("Confirmar la " +
       "eliminación")) {
-      await daoPasatiempo.
+      await daoCliente.
         doc(id).
         delete();
       muestraClientes();

@@ -3,6 +3,7 @@ class MiFooter
   connectedCallback() {
     this.innerHTML = /* html */
       `<p>
+      2021 Copy
       Decena Escorsa Kymberly 
       </p>`;
   }

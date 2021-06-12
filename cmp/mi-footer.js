@@ -4,7 +4,7 @@ class MiFooter
     this.innerHTML = /* html */
     `<p>
       INDOSSARE...Queremos lo mejor para ti.
-      </p>`;
+      </p>`
       
       `<p>
       ©2021 

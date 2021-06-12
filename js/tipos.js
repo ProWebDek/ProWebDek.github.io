@@ -22,5 +22,11 @@
  * @property {firebase.firestore.Timestamp} timestamp
  */
 
+/**
+ * @typedef {Object} Opinion
+ * @property {string} usuarioId
+ * @property {string} texto
+ * @property {firebase.firestore.Timestamp} timestamp
+ */
 
 export const __tipos = 0;

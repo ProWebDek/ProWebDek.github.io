@@ -3,9 +3,9 @@
 @import "listas.css";
 
 :root {
-  font-family: monospace;
+  font-family: cursive;
   --col-active: #4646462c;
-  --color-headerurl: yellow;
+  --color-headerurl: blue;
   --colorMiNav: pink;
 }
 
@@ -13,7 +13,6 @@ body {
   max-width: 640px; 
   margin: 0 auto;
   padding: 0.5rem; 
-  background: url(../imagenes/imagen.jpg);
 }
 
 header {

@@ -11,7 +11,7 @@ import {
     tieneRol
   } from "./seguridad.js";
   
-  const daoMensaje = getFirestore().
+  const daoOpinion = getFirestore().
     collection("Mensaje");
   let usuarioId = "";
   /** @type {HTMLFormElement} */
@@ -62,7 +62,7 @@ import {
       /* El modelo se agrega a
        * la colección
        * "Mensaje". */
-      await daoMensaje.add(modelo);
+      await daoOpinion.add(modelo);
       forma.texto.value = "";
     } catch (e) {
       muestraError(e);
@@ -82,7 +82,7 @@ import {
      *  "timestamp"
      * de forma
      *  descendente. */
-    daoMensaje.
+    daoOpinion.
       orderBy("timestamp", "desc").
       onSnapshot(
         htmlLista, errConsulta);

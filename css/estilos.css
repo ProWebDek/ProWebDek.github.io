@@ -5,7 +5,7 @@
 :root {
   font-family: sans-serif;
   --col-active: #4646462c;
-  --color-header: blue;
+  --color-headerurl: url(../imagenes/imagen.jpg);
   --colorMiNav: pink;
 }
 
@@ -19,8 +19,8 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color:url(../imagenes/imagen.jpg);
-   /* var(--color-header);*/
+  background-color:
+    var(--color-header);
 }
 
 .herramientas {

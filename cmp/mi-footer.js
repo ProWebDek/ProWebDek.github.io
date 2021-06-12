@@ -2,9 +2,13 @@ class MiFooter
   extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /* html */
+    `<p>
+      INDOSSARE...Queremos lo mejor para ti.
+      </p>`;
+      
       `<p>
-      2021 Copy
-      Decena Escorsa Kymberly 
+      ©2021 
+       || Decena Escorsa Kymberly ||
       </p>`;
   }
 }

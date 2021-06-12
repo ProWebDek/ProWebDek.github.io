@@ -44,9 +44,11 @@ async function
     forma.email.value =
       usuario.email || "";
     forma.nombre.value =
-      usuario.displayName || "";
+      usuario.displayName || "" || +
+      "indossare es una marca de ropa creada para hacerte sentir especial."||+
+      "Inicio el 25 de Julio del 2020";
     avatar.src =
-      usuario.photoURL || "";
+      usuario.photoURL || "" ;
     forma.terminarSesión.
       addEventListener(
         "click", terminaSesión);

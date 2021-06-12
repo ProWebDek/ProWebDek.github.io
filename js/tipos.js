@@ -22,4 +22,5 @@
  * @property {firebase.firestore.Timestamp} timestamp
  */
 
+
 export const __tipos = 0;

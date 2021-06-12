@@ -10,18 +10,17 @@
 }
 
 body {
-  /*max-width: 640px; 
+  max-width: 640px; 
   margin: 0 auto;
-  padding: 0.5rem; **/
-  background: url(../imagenes/imagen.jpg);
+  padding: 0.5rem; 
 }
 
 header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color:
-    var(--color-header);
+  background-color:url(../imagenes/imagen.jpg);
+   /* var(--color-header);*/
 }
 
 .herramientas {

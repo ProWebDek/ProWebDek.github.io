@@ -16,6 +16,8 @@ import {
 /** @type {HTMLUListElement} */
 const lista = document.
   querySelector("#lista");
+  const listas = document.
+  querySelector("#listas");
 const firestore = getFirestore();
 const daoRol = firestore.
   collection("Rol");
@@ -40,6 +42,11 @@ async function protege(usuario) {
 function consulta() {
   daoUsuario.onSnapshot(
     htmlLista, errConsulta);
+}
+
+function consulta() {
+  daoUsuario.onSnapshot(
+    htmlListas, errConsulta);
 }
 
 /**
@@ -69,6 +76,34 @@ async function htmlLista(snap) {
   }
   lista.innerHTML = html;
 }
+
+/**
+ * @param {import(
+    "../lib/tiposFire.js").
+    QuerySnapshot} snap */
+    async function htmlListas(snap) {
+      let html = "";
+      if (snap.size > 0) {
+        /** @type {
+              Promise<string>[]} */
+        let usuarios = [];
+        snap.forEach(doc => usuarios.
+          push(htmlFila(doc)));
+        const htmlFilas =
+          await Promise.all(usuarios);
+        /* Junta el todos los
+         * elementos del arreglo en
+         * una cadena. */
+        html += htmlFilas.join("");
+      } else {
+        html += /* html */
+          `<li class="vacio">
+            -- No hay usuarios
+            registrados. --
+          </li>`;
+      }
+      listas.innerHTML = html;
+    }
 
 /**
  * @param {import(

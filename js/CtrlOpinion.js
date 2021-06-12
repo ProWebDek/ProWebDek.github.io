@@ -17,8 +17,8 @@ import {
   /** @type {HTMLFormElement} */
   const forma = document["forma"];
   /** @type {HTMLUListElement} */
-  const lista = document.
-    querySelector("#lista");
+  const listas = document.
+    querySelector("#listas");
   
   getAuth().onAuthStateChanged(
     protege, muestraError);
@@ -85,7 +85,7 @@ import {
     daoOpinion.
       orderBy("timestamp", "desc").
       onSnapshot(
-        htmlLista, errConsulta);
+        htmlListas, errConsulta);
   }
   
   /** Muestra los datos enviados por
@@ -101,7 +101,7 @@ import {
    *    contiene una copia de los
    *    datos del servidor.
    */
-  function htmlLista(snap) {
+  function htmlListas(snap) {
     let html = "";
     if (snap.size > 0) {
       /* Cuando el número de
@@ -126,7 +126,7 @@ import {
           registrados. --
         </li>`;
     }
-    lista.innerHTML = html;
+    listas.innerHTML = html;
   }
   
   /** Agrega el texto HTML

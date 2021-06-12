@@ -13,6 +13,9 @@ import {
 /** @type {HTMLUListElement} */
 const lista = document.
   querySelector("#lista");
+
+const listas = document.
+  querySelector("#listas");
 const daoCliente =
   getFirestore().
     collection("Cliente");
@@ -38,6 +41,12 @@ function consulta() {
       htmlLista, errConsulta);
 }
 
+function consulta() {
+  daoCliente.
+    orderBy("nombre")
+    .onSnapshot(
+      htmlListas, errConsulta);
+}
 /**
  * @param {import(
     "../lib/tiposFire.js").
@@ -56,6 +65,24 @@ function htmlLista(snap) {
   }
   lista.innerHTML = html;
 }
+/**
+ * @param {import(
+    "../lib/tiposFire.js").
+    QuerySnapshot} snap */
+    function htmlListas(snap) {
+      let html = "";
+      if (snap.size > 0) {
+        snap.forEach(doc =>
+          html += htmlFila(doc));
+      } else {
+        html += /* html */
+          `<li class="vacio">
+            -- No hay clientes
+            registrados. --
+          </li>`;
+      }
+      listas.innerHTML = html;
+    }
 
 /**
  * @param {import(

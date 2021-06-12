@@ -9,6 +9,11 @@
  */
 
 /**
+ * @typedef {Object} Local
+ * @property {string} descripción
+ */
+
+/**
  * @typedef {Object} Usuario
  * @property {string[]} rolIds
  * @property {string} clienteId

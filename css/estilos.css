@@ -3,7 +3,7 @@
 @import "listas.css";
 
 :root {
-  font-family: cursive;
+  font-family: 'Times New Roman', Times, serif;
   --col-active: #4646462c;
   --color-headerurl: blue;
   --colorMiNav: pink;
@@ -13,7 +13,6 @@ body {
   max-width: 640px; 
   margin: 0 auto;
   padding: 0.5rem; 
-  background-image: url("imagen.jpg");
 }
 
 header {

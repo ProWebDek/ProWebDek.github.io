@@ -3,7 +3,7 @@
 @import "listas.css";
 
 :root {
-  font-family: sans-serif;
+  font-family: monospace;
   --col-active: #4646462c;
   --color-headerurl: yellow;
   --colorMiNav: pink;

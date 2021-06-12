@@ -21,7 +21,7 @@
  * @property {string} texto
  * @property {firebase.firestore.Timestamp} timestamp
  */
-
+// @ts-nocheck
 /**
  * @typedef {Object} Opinion
  * @property {string} usuarioId

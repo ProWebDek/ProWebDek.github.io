@@ -10,9 +10,9 @@
 }
 
 body {
-  max-width: 640px; 
+  /*max-width: 640px; 
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 0.5rem; **/
   background: url(../imagenes/imagen.jpg);
 }
 

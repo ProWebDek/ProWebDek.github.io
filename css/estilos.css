@@ -5,14 +5,15 @@
 :root {
   font-family: sans-serif;
   --col-active: #4646462c;
-  --color-header: purple;
+  --color-header: blue;
   --colorMiNav: pink;
 }
 
 body {
-  max-width: 640px;
+  max-width: 640px; 
   margin: 0 auto;
   padding: 0.5rem;
+  background: url(/...imagenes/imagen.jpg)
 }
 
 header {

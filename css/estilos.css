@@ -5,7 +5,7 @@
 :root {
   font-family: 'Times New Roman', Times, serif;
   --col-active: #4646462c;
-  --color-headerurl: blue;
+  --color-header: blue;
   --colorMiNav: pink;
 }
 
@@ -39,7 +39,7 @@ header input {
 }
 
 h1 {
-  margin: 1.5rem 0;
+  margin: 1.3rem 0;
 }
 
 figure img {
@@ -50,13 +50,13 @@ legend,
 p label {
   display: block;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 p label>* {
   display: block;
   font-weight: normal;
-  font-size: 2rem;
+  font-size: 1.5rem;
   box-sizing: border-box;
   width: 100%;
 }

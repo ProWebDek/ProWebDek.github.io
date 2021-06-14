@@ -13,7 +13,9 @@ body {
   max-width: 650px; 
   margin: 0 auto;
   padding: 1.rem; 
-  background-image: image(favicon.jpg);
+  
+ background-image: url("images/favicon.jpg");
+  
 }
 
 header {

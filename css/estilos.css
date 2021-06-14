@@ -13,7 +13,6 @@ body {
   max-width: 650px; 
   margin: 0 auto;
   padding: 1.rem; 
-  
  background-image: url("images/favicon.jpg");
   
 }
@@ -42,7 +41,7 @@ header input {
 }
 
 h1 {
-  margin: 1.3rem 0;
+  margin: 1.rem 0;
 }
 
 figure img {
@@ -53,13 +52,13 @@ legend,
 p label {
   display: block;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.rem;
 }
 
 p label>* {
   display: block;
   font-weight: normal;
-  font-size: 1.3rem;
+  font-size: 1.rem;
   box-sizing: border-box;
   width: 100%;
 }

@@ -36,8 +36,7 @@ async function protege(usuario) {
   }
 }
 
-/** Busca y muestra los datos que
- * corresponden al id recibido. */
+
 async function busca() {
   try {
     const doc =
@@ -48,7 +47,7 @@ async function busca() {
       /**
        * @type {
           import("./tipos.js").
-                  Pasatiempo} */
+                  } */
       const data = doc.data();
       forma.nombre.value =
         data.nombre || "";
@@ -78,7 +77,7 @@ async function guarda(evt) {
     /**
      * @type {
         import("./tipos.js").
-                Pasatiempo} */
+                } */
     const modelo = {
       nombre
     };

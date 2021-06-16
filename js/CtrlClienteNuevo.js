@@ -43,7 +43,7 @@ async function guarda(evt) {
     /**
      * @type {
         import("./tipos.js").
-                Pasatiempo} */
+                } */
     const modelo = {
       nombre
     };

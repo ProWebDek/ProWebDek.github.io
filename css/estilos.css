@@ -7,13 +7,15 @@
   --col-active: #4646462c;
   --color-header: violet;
   --colorMiNav: pink;
+  --color-body:indianred;
 }
 
 body {
   max-width: 650px; 
   margin: .5 auto;
   padding: 1.rem; 
-  background-color: indianred;
+  background-color:
+    var(--color-body);
   
 }
 
